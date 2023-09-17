@@ -1,113 +1,198 @@
-import Image from 'next/image'
+import React from "react";
+import "./globals.css";
 
-export default function Home() {
+function page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <div className=" fixed w-full h-[80px] bg-white border-b px-8">
+        <div className="max-w-[1472px] m-auto w-full h-full flex justify-between items-center">
+          <img
+            src="https://lh3.googleusercontent.com/drive-viewer/AITFw-xfupTrxyNIsunErkOgfboA0bTszjveMjY4rHDwgSdBe9uyB7eNjFePx7KfHyZoapvapvoVVENGFEVWMMtHdFI2I-jA=s1600?source=screenshot.guru"
+            className="h-[35px]"
+            alt="Sopher Logo"
+          />
+
+          <div className="flex items-center">
+            <ul className="flex gap-10">
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#highlights">Highlights</a>
+              </li>
+              <li>
+                <a href="#technologyUsed">Method</a>
+              </li>
+              <li>
+                <a href="#future-considerations">Future Considerations</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+  <a
+    href="https://www.apple.com/app-store/" // Replace with the actual URL you want to link to
+    className="px-8 py-3 rounded-md bg-[#DC143C] text-white font-medium"
+  >
+    Visit App
+  </a>
+</div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="w-full bg-white py-24">
+        <div className="max-w-[1480px] m-auto grid grid-cols-2 px-8 mt-5">
+          <div className=" flex flex-col justify-start gap-4 px-2">
+            <p className="py-1.5 text-2xl text-[#DC143C] font-medium">
+              Auto-fill medical forms with virtual scribe
+            </p>
+            <h1 className="leading-[72px] py-2 text-6xl font-semibold">
+              Save Time, Eliminate Errors, and Focus on What Matters
+            </h1>
+            <p className="py-2 text-lg text-gray-600">
+              A HOPHACKS 2023 PROJECT
+            </p>
+          </div>
+          <a className="m-auto" href="https://lh3.googleusercontent.com/drive-viewer/AITFw-weNB8DZgFCHjGAyfyKGOrU0b8SdHROBbOueCv3j0Tlf9P_3Y4wxhG5baf1STA6Xb7V2kdFyMXjz6znEyF3cerFqtVKkA=s2560?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-weNB8DZgFCHjGAyfyKGOrU0b8SdHROBbOueCv3j0Tlf9P_3Y4wxhG5baf1STA6Xb7V2kdFyMXjz6znEyF3cerFqtVKkA=s2560" /> </a> 
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      <div id="about" className="w-full bg-white py-[70px] px-8">
+        <div className="max-w-[1480px] m-auto">
+          <h1 className="text-center text-4xl font-bold text-[#DC143C] my-4">
+            About
+          </h1>
+          <p className="text-center text-[#586477] text-x1">
+            Filling out medical forms is more than just tedious, it's
+            nerve-wracking, and for some, like those with visual or motor
+            disabilities, it's an uphill battle against stress and anxiety. The
+            problems do not just end there. they are a source of medical error.
+            86 Percent of healthcare mistakes are administrative, often due to
+            illegible handwriting or typos when transcribing forms. Sophér,
+            inspired by the Hebrew word 'Scribe,' goes beyond digitizing paper
+            forms. It remembers your vital info, eliminating repetitive entries.
+            Have new information? Sophér asks, saves, and autofills. We simplify
+            it all in a friendly chat format, reducing stress and transforming
+            healthcare forms into a stress-free experience.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        </div>
       </div>
-    </main>
-  )
+
+      <div id="highlights" className="w-full bg-white py-24">
+        <h1 className="text-center text-4xl font-bold text-[#DC143C] my-6">
+          Highlights
+        </h1>
+        <div className="md:max-w-[1480px] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white shadow-md overflow-hidden rounded-lg border p-7">
+            <h2 className="text-center text-2xl font-bold mb-4">
+              Instant Form Filling
+            </h2>
+            <p>
+              Not all information on medical forms is time-sensitive. With our
+              app, you'll only need to input information that truly matters in
+              the moment, such as how you are feeling right now.
+            </p>
+          </div>
+
+          <div className="bg-white shadow-md overflow-hidden rounded-lg border p-7">
+            <h2 className="text-center text-2xl font-bold mb-4">
+              User-Friendly Interface
+            </h2>
+            <p>
+              Our user-friendly interface makes it easy for anyone to navigate
+              and use the app.
+            </p>
+          </div>
+
+          <div className="bg-white shadow-md overflow-hidden rounded-lg border p-7">
+            <h2 className="text-center text-2xl font-bold mb-4">Time-Saving</h2>
+            <p>
+              Say goodbye to long waiting times in the clinic. With Sophér,
+              you'll breeze through check-ins, making your appointments quicker
+              and more efficient.
+            </p>
+          </div>
+
+          <div className="bg-white shadow-md overflow-hidden rounded-lg border p-7">
+            <h2 className="text-center text-2xl font-bold mb-4">
+              Environmentally Friendly
+            </h2>
+            <p>
+              Reducing the need for physical paperwork, Sophér is helping to
+              save trees and reduce paper waste.
+            </p>
+          </div>
+
+          <div className="bg-white shadow-md overflow-hidden rounded-lg border p-7">
+            <h2 className="text-center text-2xl font-bold mb-4">
+              Reduce Patient Error
+            </h2>
+            <p>
+              Sophér ensures that your information is entered correctly every
+              time, reducing the risk of mistakes that could lead to extra
+              medical expenses.
+            </p>
+          </div>
+
+          <div className="bg-white shadow-md overflow-hidden rounded-lg border p-5">
+            <h2 className="text-center text-2xl font-bold mb-4">
+              Reduce Administrative Error
+            </h2>
+            <p>
+              86% of mistakes in the healthcare industry are administrative,
+              which often occurs when transcribing information. Sophér helps
+              healthcare providers by entering information only once and
+              eliminating legibility errors.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="technologyUsed" className="w-full bg-white py-[50px] px-8">
+        <div className="max-w-[1480px] m-auto">
+          <h1 className="text-center text-4xl font-bold text-[#DC143C] my-4">
+            Technology Used
+          </h1>
+          <p className="text-center text-[#586477] text-x1">
+            We use Next.JS for front-end development. Additionally, we use
+            Capacitor to port the web app into a mobile app. For back-end, we
+            use a python script that recieves an image from Next.JS, formats the
+            image, finds the form fields with Google OCR. We then use ChatGPT
+            and prompt engineering to turn those fields into questions asked to
+            the user. We feed the responses back to the original PDF and return
+            a filled form to the user.
+          </p>
+        </div>
+      </div>
+
+      <div id ="future-considerations" className="w-full bg-white py-[50px] px-8 mb-20">
+        <div className="max-w-[1480px] m-auto">
+          <h1 className="text-center text-4xl font-bold text-[#DC143C] my-4">
+            Future Considerations
+          </h1>
+          <p className="text-center text-[#586477] text-x1">
+            Given more time, we would expand the form-filling capability to
+            multiple-page documents. This would increase the efficacy of our app
+            as errors are more likely to occur in longer documents.
+            Additionally, we would consider implementing the option to fax, as
+            this method is still widely used by hospitals and other healthcare
+            providers. To make this app production-ready, we would transfer the
+            data stored to PHIPA and PIPEDA-compliant cloud servers.
+            Furthermore, we may even add the capability for patients to scan
+            perscription labels for allergy interactions.
+          </p>
+        </div>
+      </div>
+
+      <div className="w-full bg-black py-4">
+        <div className="max-w-[1480px] m-auto">
+          <p className="text-center text-white text-sm">
+            © 2023 Sophér. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
+
+export default page;
